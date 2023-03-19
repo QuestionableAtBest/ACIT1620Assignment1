@@ -1,6 +1,7 @@
 body{
     font-family: 'Ubuntu', sans-serif;
     background-color: #CCD5AE;
+    color:#256993;
 }
 
 aside{
@@ -15,9 +16,15 @@ aside{
 }
 
 .Save{
-    background-color: #256993;
+    background-color: #375F68;
 }
 
 .Cancel{
     background-color: #9B332C;
+}
+
+button{
+    border-radius: 8px;
+    padding: 10px;
+    color:#FAF4EC;
 }
