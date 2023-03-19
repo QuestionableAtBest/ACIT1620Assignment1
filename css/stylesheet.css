@@ -1,0 +1,23 @@
+body{
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #CCD5AE;
+}
+
+aside{
+    background-color: #E9EDC9;
+}
+.NewNote{
+    background-color:#375F68;
+}
+
+.DarkTheme{
+    background-color: #56536A;
+}
+
+.Save{
+    background-color: #256993;
+}
+
+.Cancel{
+    background-color: #9B332C;
+}
