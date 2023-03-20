@@ -18,20 +18,34 @@
             <li>note two</li>
         </ul>
     </aside>
-    <h1>Take Better Notes</h1>
-    <nav>
-        <a href = "https://www.google.ca">About</a>
-        <a href = "https://www.google.ca">Docs</a>
-    </nav>
+    <div class = "UpperMain">
+
+    </div>
+    <header>
+        <h1>Take Better Notes</h1>
+        <nav>
+            <a href = "https://www.google.ca">About</a>
+            <a href = "https://www.google.ca">Docs</a>
+        </nav>
+        <div class = "TopBut">
+            <button class="NewNote"
+                type="button">
+                New Note
+            </button>
+            <button class="DarkTheme"
+                type="button">
+                Dark Theme
+            </button>
+        </div>
+    </header>
+
     <main>
-        <button class="NewNote"
-            type="button">
-            New Note
-        </button>
-        <button class="DarkTheme"
-            type="button">
-            Dark Theme
-        </button>
+        <textarea id="textbox"
+                rows="10" cols="100">
+            This is a placeholder
+        </textarea>
+    </main>
+    <div class = "BotBut">
         <button class="Save"
             type="button">
             Save
@@ -39,12 +53,8 @@
         <button class="Cancel"
             type="button">
             Cancel
-        </button>
-        <textarea id="textbox"
-                rows="10" cols="100">
-            This is a placeholder
-        </textarea>
-    </main>
+        </button>        
+    </div>
     <footer>
         <h2>Keep In Touch</h2>
         <a href = "https://www.google.ca"><img src="images/internet.webp" height="75" width="75"></a>
