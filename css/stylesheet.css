@@ -19,13 +19,12 @@ header{
     grid-row:1;
 }
 
-main{
+textarea{
     grid-row:2;
     grid-column:2;
-    display:flex;
-
+    border: 3px solid #1d7ad6;
+    border-radius: 5px;
 }
-
 .TopBut{
     justify-content: flex-end;
 }
