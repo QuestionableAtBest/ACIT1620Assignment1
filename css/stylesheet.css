@@ -27,13 +27,14 @@ header{
 main{
     display:flex;
     flex-wrap: wrap;
+    width:78vw;
 }
 
 textarea{
     grid-row:2;
     grid-column:2;
     padding:15px;
-    flex-basis:95%;
+    flex-basis:100%;
     border: 3px solid #4e9ae6;
     background-color: #E9EDC9;
     border-radius: 5px;
@@ -42,7 +43,7 @@ textarea{
 .UpMain{
     display:flex;
     flex-wrap:wrap;
-    width:77vw;
+    width:76vw;
 }
 
 .UpMain > *{
@@ -74,7 +75,7 @@ footer{
     grid-column:2;
     display:flex;
     flex-wrap: wrap;
-    width:100%;
+    width:78vw;
     justify-content: center;
 }
 
@@ -109,3 +110,44 @@ button{
 h1,h2{
     text-align: center
 }   
+
+@media(max-width:768px){
+    aside{
+        grid-row: 1;
+        width:auto;
+        margin-right: 0;
+    }
+
+    header{
+        grid-row:2;
+    }
+
+    .UpMain{
+        width: auto;
+    }
+    header nav{
+        width:97%;
+    }
+    .TopButton{
+        margin:10px;
+    }
+    
+    .BotButton{
+        flex-basis:95%;
+    }
+
+    main{
+        grid-row:3;
+        width:auto;
+    }
+
+    footer{
+        grid-row:4;
+        grid-column:1;
+        width:auto;
+    }
+
+    body{
+        grid-template-columns:1fr;
+    }
+}
