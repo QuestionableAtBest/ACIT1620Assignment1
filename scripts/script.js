@@ -1,8 +1,8 @@
 const darkBut = document.querySelector("#DarkTheme");
 const canBut = document.querySelector("#Cancel");
 const text = document.querySelector("textarea");
-const saveBut = document.querySelector("Save")
-
+const saveBut = document.querySelector("#Save")
+const newBut = document.querySelector("#NewNote")
 function darkTheme(){
     if(darkBut.textContent === "Dark Theme"){
         darkBut.textContent = "Light Theme"
@@ -43,4 +43,21 @@ function toggleLinks(){
         links[i].classList.toggle("themeChangeText")
     }
 }
+
+function cancel(){
+    text.style.display = "none";
+    saveBut.style.display = "none";
+    canBut.style.display = "none";
+}
+
+function newNote(){
+    text.style.display = "block";
+    text.value = "";
+    saveBut.style.display = "block";
+    canBut.style.display = "block";
+}
+
+darkBut.addEventListener("click",darkTheme);
+canBut.addEventListener("click",cancel);
+newBut.addEventListener("click",newNote)
 
