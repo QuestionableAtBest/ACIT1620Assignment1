@@ -1,153 +1,174 @@
-body{
-    font-family: 'Ubuntu', sans-serif;
-    background-color: #CCD5AE;
-    color:#256993;
-    display:grid;
-    grid-template-columns:20vw 80vw;
-    height:100vh;
-    width:100vh;
+body {
+  font-family: "Ubuntu", sans-serif;
+  background-color: #ccd5ae;
+  color: #256993;
+  display: grid;
+  grid-template-columns: 20vw 80vw;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
 }
 
-aside{
-    background-color: #E9EDC9;
-    grid-column:1;
-    grid-row:1/4;
-    margin-right: 1vw;
+aside {
+  background-color: #e9edc9;
+  grid-column: 1;
+  grid-row: 1/4;
+  width: 100%;
 }
 
-aside ul{
-    list-style-type: square;
+aside ul {
+  list-style-type: square;
 }
 
-header{
-    grid-column:2;
-    grid-row:1;
+header {
+  grid-column: 2;
+  grid-row: 1;
 }
 
-main{
-    display:flex;
-    flex-wrap: wrap;
-    width:78vw;
+main {
+  display: flex;
+  flex-wrap: wrap;
+  width: 78vw;
 }
 
-textarea{
-    grid-row:2;
-    grid-column:2;
-    padding:15px;
-    flex-basis:100%;
-    border: 3px solid #4e9ae6;
-    background-color: #E9EDC9;
-    border-radius: 5px;
+textarea {
+  grid-row: 2;
+  grid-column: 2;
+  padding: 15px;
+  flex-basis: 100%;
+  border: 3px solid #4e9ae6;
+  background-color: #e9edc9;
+  border-radius: 5px;
+  margin-left: 1vw;
 }
 
-.UpMain{
-    display:flex;
-    flex-wrap:wrap;
-    width:76vw;
+.UpMain {
+  display: flex;
+  flex-wrap: wrap;
+  width: 77vw;
+  margin-left: 1vw;
 }
 
-.UpMain > *{
-    flex-basis: 100%;
+.UpMain > * {
+  flex-basis: 100%;
 }
 
-header nav{
-    display:flex;
-    justify-content: flex-end;
-    gap:1vw;
+header nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1vw;
 }
 
-.TopButton{
-    display:flex;
-    justify-content:space-between;
-    align-items: flex-start;
+.TopButton {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
-.BotButton{
-    margin-top: 1vw;
-    display:flex;
-    flex-basis:76vw;
-    gap:10px;
-    justify-content:flex-end;
-    align-items: flex-start;
-}
-footer{
-    grid-row:3;
-    grid-column:2;
-    display:flex;
-    flex-wrap: wrap;
-    width:78vw;
-    justify-content: center;
+.BotButton {
+  margin-top: 1vw;
+  display: flex;
+  flex-basis: 77vw;
+  gap: 10px;
+  justify-content: flex-end;
+  align-items: flex-start;
+  margin-left: 1vw;
 }
 
-footer h1{
-    flex-basis:100%;
-    margin-bottom:0;
-    padding-bottom:0;
+footer {
+  grid-row: 3;
+  grid-column: 2;
+  display: flex;
+  flex-wrap: wrap;
+  width: 78vw;
+  justify-content: center;
 }
 
-#NewNote{
-    background-color:#375F68;
+footer a {
+  height: 10%;
+}
+footer h1 {
+  flex-basis: 100%;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
-#DarkTheme{
-    background-color: #56536A;
+#NewNote {
+  background-color: #375f68;
 }
 
-#Save{
-    background-color: #375F68;
+#DarkTheme {
+  background-color: #56536a;
 }
 
-#Cancel{
-    background-color: #9B332C;
+#Save {
+  background-color: #375f68;
 }
 
-button{
-    border-radius: 8px;
-    color:#FAF4EC;
-    padding:10px;
+#Cancel {
+  background-color: #9b332c;
 }
 
-h1,h2{
-    text-align: center
-}   
+button {
+  border-radius: 8px;
+  color: #faf4ec;
+  padding: 10px;
+}
 
-@media(max-width:768px){
-    aside{
-        grid-row: 1;
-        width:auto;
-        margin-right: 0;
-    }
+h1,
+h2 {
+  text-align: center;
+}
 
-    header{
-        grid-row:2;
-    }
+.themeChangeMain {
+  background-color: #121212;
+}
 
-    .UpMain{
-        width: auto;
-    }
-    header nav{
-        width:97%;
-    }
-    .TopButton{
-        margin:10px;
-    }
-    
-    .BotButton{
-        flex-basis:95%;
-    }
+.themeChangeAlt {
+  background-color: #2e2d2d;
+}
 
-    main{
-        grid-row:3;
-        width:auto;
-    }
+.themeChangeText {
+  color: #bb86fc;
+}
 
-    footer{
-        grid-row:4;
-        grid-column:1;
-        width:auto;
-    }
+@media (max-width: 768px) {
+  aside {
+    grid-row: 1;
+    width: auto;
+    margin-right: 0;
+  }
 
-    body{
-        grid-template-columns:1fr;
-    }
+  header {
+    grid-row: 2;
+  }
+
+  .UpMain {
+    width: auto;
+  }
+  header nav {
+    width: 97%;
+  }
+  .TopButton {
+    margin: 10px;
+  }
+
+  .BotButton {
+    flex-basis: 95%;
+  }
+
+  main {
+    grid-row: 3;
+    width: auto;
+  }
+
+  footer {
+    grid-row: 4;
+    grid-column: 1;
+    width: auto;
+  }
+
+  body {
+    grid-template-columns: 1fr;
+  }
 }
