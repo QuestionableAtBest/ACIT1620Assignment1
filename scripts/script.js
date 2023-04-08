@@ -3,6 +3,7 @@ const canBut = document.querySelector("#Cancel");
 const text = document.querySelector("textarea");
 const saveBut = document.querySelector("#Save")
 const newBut = document.querySelector("#NewNote")
+const noteList = document.querySelector("aside ul")
 function darkTheme(){
     if(darkBut.textContent === "Dark Theme"){
         darkBut.textContent = "Light Theme"
@@ -50,14 +51,28 @@ function cancel(){
     canBut.style.display = "none";
 }
 
-function newNote(){
+// 
+function startNew(){
     text.style.display = "block";
     text.value = "";
     saveBut.style.display = "block";
     canBut.style.display = "block";
 }
 
+let notesArray = []
+function addNote(){
+    input = prompt("Enter a title for your note: ");
+    note = {title:input,body:text.value};
+    notesArray.push(note);
+    let newNote = document.createElement("li");
+    newNote.textContent = note.title;
+    noteList.appendChild(newNote);
+}
 darkBut.addEventListener("click",darkTheme);
 canBut.addEventListener("click",cancel);
-newBut.addEventListener("click",newNote)
+newBut.addEventListener("click",startNew);
+saveBut.addEventListener("click",addNote);
+
+
+
 
